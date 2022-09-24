@@ -81,7 +81,7 @@
 | expectConsumerNumUseFilter             | 布隆过滤器参数                                               | int      | 32           |            |        |
 | fastFailIfNoBufferInStorePool          | 从 transientStorepool中获取 ByteBuffer是否支持快速失败       | boolean  | false        |            |        |
 | fetchNamesrvAddrByAddressServer        | 是否支持从服务器获取nameServer                               | boolean  | false        |            |        |
-| fileReservedTime                       | 文件保留时间，默认72小时，表示非当前写文件最后一次更新时间加上filereservedtime小与当前时间，该文件将被清理 | String   | 120          |            |        |
+| fileReservedTime                       | 文件保留时间，默认72小时，表示非当前写文件最后一次更新时间加上filereservedtime小于当前时间，该文件将被清理 | String   | 120          |            |        |
 | filterDataCleanTimeSpan                | 清除过滤数据的时间间隔                                       | long     | 86400000     |            |        |
 | filterServerNums                       | broker服务器过滤服务器数量                                   | int      | 0            |            |        |
 | filterSupportRetry                     | 消息过滤是否支持重试                                         | boolean  | false        |            |        |
